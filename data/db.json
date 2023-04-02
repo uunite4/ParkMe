@@ -1,0 +1,110 @@
+{
+	"complexes": [
+		{
+			"id": 1,
+			"includesBuildings": [
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8a",
+				"8b",
+				"8c"
+			],
+			"parkingSpots": [
+				{
+					"id": 0,
+					"number": 35,
+					"status": "free",
+					"owner": {
+						"building": "8b",
+						"apartment-number": 5
+					}
+				},
+				{
+					"id": 1,
+					"number": 36,
+					"status": "taken",
+					"owner": {
+						"building": "8b",
+						"apartment-number": 6
+					}
+				},
+				{
+					"id": 2,
+					"number": 37,
+					"status": "not for use",
+					"owner": {
+						"building": "8b",
+						"apartment-number": 7
+					}
+				},
+				{
+					"id": 3,
+					"number": 38,
+					"status": "free",
+					"owner": {
+						"building": "8b",
+						"apartment-number": 8
+					}
+				}
+			]
+		},
+		{
+			"id": 2,
+			"includesBuildings": [
+				"9",
+				"10",
+				"11",
+				"12",
+				"13a",
+				"13b",
+				"13c",
+				"14",
+				"15",
+				"16"
+			],
+			"parkingSpots": [
+				{
+					"id": 0,
+					"number": 39,
+					"status": "taken",
+					"owner": {
+						"building": "9",
+						"apartment-number": 5
+					}
+				},
+				{
+					"id": 1,
+					"number": 40,
+					"status": "free",
+					"owner": {
+						"building": "10",
+						"apartment-number": 6
+					}
+				},
+				{
+					"id": 2,
+					"number": 41,
+					"status": "not for use",
+					"owner": {
+						"building": "11",
+						"apartment-number": 7
+					}
+				},
+				{
+					"id": 3,
+					"number": 42,
+					"status": "free",
+					"owner": {
+						"building": "12",
+						"apartment-number": 8
+					}
+				}
+			]
+		}
+	]
+}

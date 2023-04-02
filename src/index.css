@@ -1,13 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0px;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: #1b1b1b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	font-family: 'Rubik', sans-serif;
+}
+
+.complex-ui-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.complex {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	background-color: #242424;
+	padding: 1em;
+	text-align: center;
+}
+
+.parking-spots-cont {
+	display: flex;
+	gap: 0.5em;
+}
+
+.parking-spot {
+	width: 10em;
+	height: 15em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4em;
+	color: #dddddd;
+}
+
+.parking-spot.free {
+	background-color: #194e14;
+}
+
+.parking-spot.taken-nfu {
+	background-color: #4e1414;
+}
+
+.parking-spot-props {
+	margin: 0px;
+}
+
+.parking-spot-number {
+	font-size: 2rem;
+}
+
+.parking-spot-status {
+	font-size: 1.5rem;
 }
