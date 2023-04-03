@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Parking from './components/Parking'
+import Parking from './Parking'
 
 const Complex = (props) => {
 	const ParkingUI = CreateParkingUI()

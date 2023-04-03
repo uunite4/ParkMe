@@ -2,14 +2,96 @@
 
 body {
 	margin: 0px;
-	display: grid;
-	place-items: center;
-	height: 100vh;
-	background-color: #1b1b1b;
+	background-color: #242424;
 }
 
 * {
 	font-family: 'Rubik', sans-serif;
+	color: #dddddd;
+	box-sizing: border-box;
+}
+
+.router-link {
+	text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+	width: 100%;
+	height: 7vh;
+	background-color: #1b1b1b;
+	padding: 0.5em;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.logo img {
+	width: 3em;
+}
+
+.logo p {
+	font-size: 2rem;
+	margin: 0px;
+	font-weight: 700;
+}
+
+.login-signup {
+	display: flex;
+	height: 100%;
+	gap: 1em;
+	align-items: center;
+}
+
+.nav-btn {
+	height: 75%;
+	border: none;
+	border-radius: 1em;
+	padding: 0em 1.5em;
+	font-size: 1rem;
+}
+
+.nav-btn p {
+	margin: 0px;
+}
+
+.signup {
+	background-color: #2564c4;
+	border: 2px solid #1b1b1b;
+}
+
+.signup:hover {
+	border: 2px solid #2564c4;
+	background-color: #1b1b1b;
+}
+
+.login {
+	border: 2px solid #2564c4;
+	background-color: #1b1b1b;
+}
+
+.login:hover {
+	border: 2px solid #1b1b1b;
+	background-color: #2564c4;
+}
+
+/* ALL CONT */
+.all-cont {
+	height: 93vh;
+	display: grid;
+	place-items: center;
+}
+
+/* COMPLEX */
+
+h1 {
+	margin: 0px;
 }
 
 .complex-ui-cont {
@@ -22,7 +104,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	background-color: #242424;
+	background-color: #2c2c2c;
 	padding: 1em;
 	text-align: center;
 }
@@ -61,4 +143,59 @@ body {
 
 .parking-spot-status {
 	font-size: 1.5rem;
+}
+
+/* SIGN UP */
+
+.form-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	background-color: #2c2c2c;
+	padding: 3em;
+	text-align: center;
+}
+
+.form-cont h1 {
+	font-size: 3rem;
+	margin: 0px;
+	color: white;
+}
+
+.input-cont {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3em;
+}
+
+.input-cont p {
+	color: #ff7878;
+	margin: 0px;
+}
+
+input {
+	padding: 0.3em;
+	font-size: 2rem;
+	border: none;
+	color: #1b1b1b;
+}
+
+input:focus {
+	outline: none;
+	background-color: #afafaf;
+}
+
+button[type='submit'] {
+	padding: 0.3em;
+	font-size: 2rem;
+	border: none;
+	color: #ffffff;
+	background-color: #2564c4;
+	border: 2px solid #2c2c2c;
+}
+
+button[type='submit']:hover {
+	background-color: #2c2c2c;
+	border: 2px solid #2564c4;
 }

@@ -1,44 +1,36 @@
 import React, { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import axios from 'axios'
-import Complex from './Complex'
+
+import Nav from './components/Nav'
+import Main from './components/pages/Main'
+import Start from './components/pages/Start'
+import Signup from './components/pages/Signup'
 
 const App = () => {
 	const [loading, SetLoading] = useState(true)
 	const [allData, setAllData] = useState(null)
-	const complexUI = CreateComplexUI()
 
 	useEffect(() => {
 		axios.get('http://localhost:3001/complexes').then((res) => {
 			setAllData(res.data)
-			console.log(res.data)
 			SetLoading(false)
 		})
 	}, [])
 
-	function CreateComplexUI() {
-		if (allData) {
-			return allData.map((complex) => {
-				return (
-					<Complex
-						key={complex.id}
-						id={complex.id}
-						buildings={complex.includesBuildings}
-						parkingSpots={complex.parkingSpots}
-					/>
-				)
-			})
-		} else {
-			return
-		}
-	}
-
 	return (
 		<>
-			{loading ? (
-				<h1>Loading...</h1>
-			) : (
-				<div className='complex-ui-cont'>{complexUI}</div>
-			)}
+			<Nav />
+			<div className='all-cont'>
+				<Routes>
+					<Route
+						path='/complexes'
+						element={<Main allData={allData} loading={loading} />}
+					/>
+					<Route path='/' element={<Start />} />
+					<Route path='/signup' element={<Signup />} />
+				</Routes>
+			</div>
 		</>
 	)
 }
