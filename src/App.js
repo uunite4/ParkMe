@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import axios from 'axios'
 
 import Nav from './components/Nav'
+import Error404 from './components/pages/Error404'
 import Main from './components/pages/Main'
 import Start from './components/pages/Start'
 import Signup from './components/pages/Signup'
+import ParkingForm from './components/pages/ParkingForm'
+
+import { Country, State, City } from 'country-state-city'
 
 const App = () => {
 	const [loading, SetLoading] = useState(true)
-	const [allData, setAllData] = useState(null)
+	const [complexes, setComplexes] = useState(null)
 
 	useEffect(() => {
 		axios.get('http://localhost:3001/complexes').then((res) => {
-			setAllData(res.data)
+			setComplexes(res.data)
 			SetLoading(false)
 		})
 	}, [])
@@ -25,10 +29,13 @@ const App = () => {
 				<Routes>
 					<Route
 						path='/complexes'
-						element={<Main allData={allData} loading={loading} />}
+						element={<Main allData={complexes} loading={loading} />}
 					/>
 					<Route path='/' element={<Start />} />
 					<Route path='/signup' element={<Signup />} />
+					<Route path='/parking-form' element={<ParkingForm />} />
+					<Route path='/404' element={<Error404 />} />
+					<Route path='*' element={<Navigate to='/404' />} />
 				</Routes>
 			</div>
 		</>
