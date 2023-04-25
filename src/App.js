@@ -33,7 +33,10 @@ const App = () => {
 					/>
 					<Route path='/' element={<Start />} />
 					<Route path='/signup' element={<Signup />} />
-					<Route path='/parking-form' element={<ParkingForm />} />
+					<Route
+						path='/parking-form/:complexid/:parkingid'
+						element={<ParkingForm allData={complexes} />}
+					/>
 					<Route path='/404' element={<Error404 />} />
 					<Route path='*' element={<Navigate to='/404' />} />
 				</Routes>

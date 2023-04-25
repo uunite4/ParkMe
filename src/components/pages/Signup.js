@@ -14,7 +14,7 @@ const Signup = () => {
 
 	return (
 		<form
-			className='form-cont'
+			className='signup-form-cont'
 			onSubmit={handleSubmit((data) => {
 				FormHandleSubmit(data)
 			})}
@@ -136,7 +136,9 @@ const Signup = () => {
 				</div>
 			</div>
 
-			<button type='submit'>Create Account</button>
+			<button className='signup-submit' type='submit'>
+				Create Account
+			</button>
 		</form>
 	)
 }

@@ -19,6 +19,7 @@
 					"id": 0,
 					"number": 35,
 					"status": "free",
+					"time": "20:30",
 					"owner": {
 						"building": "8b",
 						"apartment-number": 5
@@ -28,6 +29,7 @@
 					"id": 1,
 					"number": 36,
 					"status": "taken",
+					"time": "",
 					"owner": {
 						"building": "8b",
 						"apartment-number": 6
@@ -37,6 +39,7 @@
 					"id": 2,
 					"number": 37,
 					"status": "not for use",
+					"time": "",
 					"owner": {
 						"building": "8b",
 						"apartment-number": 7
@@ -46,6 +49,7 @@
 					"id": 3,
 					"number": 38,
 					"status": "free",
+					"time": "16:15",
 					"owner": {
 						"building": "8b",
 						"apartment-number": 8
@@ -72,6 +76,7 @@
 					"id": 0,
 					"number": 39,
 					"status": "taken",
+					"time": "",
 					"owner": {
 						"building": "9",
 						"apartment-number": 5
@@ -81,6 +86,7 @@
 					"id": 1,
 					"number": 40,
 					"status": "free",
+					"time": "21:45",
 					"owner": {
 						"building": "10",
 						"apartment-number": 6
@@ -90,6 +96,7 @@
 					"id": 2,
 					"number": 41,
 					"status": "not for use",
+					"time": "",
 					"owner": {
 						"building": "11",
 						"apartment-number": 7
@@ -99,6 +106,7 @@
 					"id": 3,
 					"number": 42,
 					"status": "free",
+					"time": "19:00",
 					"owner": {
 						"building": "12",
 						"apartment-number": 8

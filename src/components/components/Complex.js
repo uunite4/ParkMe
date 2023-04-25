@@ -12,9 +12,11 @@ const Complex = (props) => {
 					<Parking
 						key={park.id}
 						id={park.id}
+						complexId={props.id}
 						number={park.number}
 						owner={park.owner}
 						status={park.status}
+						time={park.time}
 					/>
 				)
 			})
