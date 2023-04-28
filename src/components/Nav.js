@@ -69,13 +69,15 @@ const Nav = () => {
 			<button onClick={Loc}>Location</button>
 
 			<div className='login-signup'>
-				<button className='nav-btn signup'>
+				<button className='nav-btn signup-btn'>
 					<Link className='router-link' to='/signup'>
 						<p>SIGN UP</p>
 					</Link>
 				</button>
-				<button className='nav-btn login'>
-					<p>LOGIN</p>
+				<button className='nav-btn login-btn'>
+					<Link className='router-link' to='/login'>
+						<p>LOGIN</p>
+					</Link>
 				</button>
 			</div>
 		</nav>

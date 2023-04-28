@@ -8,6 +8,7 @@ import Main from './components/pages/Main'
 import Start from './components/pages/Start'
 import Signup from './components/pages/Signup'
 import ParkingForm from './components/pages/ParkingForm'
+import Login from './components/pages/Login'
 
 import { Country, State, City } from 'country-state-city'
 
@@ -37,6 +38,7 @@ const App = () => {
 						path='/parking-form/:complexid/:parkingid'
 						element={<ParkingForm allData={complexes} />}
 					/>
+					<Route path='/login' element={<Login />}></Route>
 					<Route path='/404' element={<Error404 />} />
 					<Route path='*' element={<Navigate to='/404' />} />
 				</Routes>
